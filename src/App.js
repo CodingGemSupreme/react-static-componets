@@ -10,12 +10,10 @@ function App() {
   return (
     <div className='App'>
       <ReactStaticComponents />
-      <Reviews />
       <Reviews reviewNum={1281} />
       <SentimentAnalysis />
       <AverageRating />
     </div>
   );
 }
-
 export default App;

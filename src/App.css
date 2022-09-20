@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display: grid;
 }
 
 .App-logo {
@@ -36,4 +37,36 @@
     transform: rotate(360deg);
   }
 }
+* {
+  font-family: Helvetica;
+  color: rgb(0, 0, 0);
+}
+#ReactStaticComponents {
+  height: 80vmin;
+  width: 80vmin;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
+}
+#ReactStaticComponents div {
+  display: ;
+  justify-content: center;
+  align-items: center;
+}
+.ReactStaticComponents {
+  background-color: #a7adaf;
+  grid-column: 3;
+}
+.Reviews {
+  background-color: #a7adaf;
+  grid-column: 3;
+}
+.SentimentAnalysis {
+background-color: #a7adaf;
+grid-column: 1;
+}
+.AverageRating {
+  background-color: #a7adaf;
+  grid-column: 3;
 
+}
