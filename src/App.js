@@ -8,11 +8,13 @@ import './App.css';
 
 function App() {
   return (
+    <div className='fullbox'>
     <div className='App'>
       <ReactStaticComponents />
       <Reviews reviewNum={1281} />
       <SentimentAnalysis />
       <AverageRating />
+    </div>
     </div>
   );
 }

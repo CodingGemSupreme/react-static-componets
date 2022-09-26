@@ -1,6 +1,16 @@
+.fullbox {
+  background-color: #e3e3e3;
+}
 .App {
   text-align: center;
+  font-family: Helvetica;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: 
+  "sidebar reviews avgRating sentAnalysis"
+  "sidebar web web web";
+  border: none;
 }
 
 .App-logo {
@@ -44,29 +54,32 @@
 #ReactStaticComponents {
   height: 80vmin;
   width: 80vmin;
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  display: justify-self;
+  grid-template-columns: 5fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 1fr 2fr;
 }
+
 #ReactStaticComponents div {
-  display: ;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
 .ReactStaticComponents {
-  background-color: #a7adaf;
-  grid-column: 3;
+  grid-area: sidebar;
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .Reviews {
-  background-color: #a7adaf;
-  grid-column: 3;
+  grid-area: reviews;
+  background-color: #dddddd;
 }
 .SentimentAnalysis {
-background-color: #a7adaf;
-grid-column: 1;
+  grid-area: sentAnalysis;
+  background-color: #dddddd;
 }
 .AverageRating {
-  background-color: #a7adaf;
-  grid-column: 3;
-
+  grid-area: avgRating;
+  background-color: #dddddd;
 }
