@@ -83,3 +83,15 @@
   grid-area: avgRating;
   background-color: #dddddd;
 }
+.WebsiteVisitors {
+  grid-area: web;
+  background-color: #dddddd;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  justify-content: space-around;
+}
+#root {
+  border: none;
+  background-color: #f7f7f6;
+}
